@@ -1,4 +1,4 @@
-package com.MikeLC7.JavaBase;
+package JavaBase;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.MikeLC7.JavaBase.collection.a_remark;
+package JavaBase.collection.a_remark;
 
 import org.junit.jupiter.api.Test;
 

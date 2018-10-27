@@ -1,4 +1,4 @@
-package com.MikeLC7.JavaBase.base.statics;
+package JVM.classLoad.sequence;
 
 /**
  * Project:

@@ -1,4 +1,4 @@
-package com.MikeLC7.JavaBase.base.extendsAndImpl.cascadeMode;
+package JavaBase.base.extendsAndImpl.cascadeMode;
 
 /**
  * Project:

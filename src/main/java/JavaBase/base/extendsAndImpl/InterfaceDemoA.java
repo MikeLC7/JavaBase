@@ -1,4 +1,4 @@
-package com.MikeLC7.JavaBase.base.extendsAndImpl;
+package JavaBase.base.extendsAndImpl;
 /**
  * Project:
  *

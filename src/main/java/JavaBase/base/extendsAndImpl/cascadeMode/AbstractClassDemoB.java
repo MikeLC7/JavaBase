@@ -1,7 +1,7 @@
-package com.MikeLC7.JavaBase.base.extendsAndImpl.cascadeMode;
+package JavaBase.base.extendsAndImpl.cascadeMode;
 
-import com.MikeLC7.JavaBase.base.extendsAndImpl.AbstractClassDemoA;
-import com.MikeLC7.JavaBase.base.extendsAndImpl.InterfaceDemoA;
+import JavaBase.base.extendsAndImpl.AbstractClassDemoA;
+import JavaBase.base.extendsAndImpl.InterfaceDemoA;
 
 /**
  * Project:

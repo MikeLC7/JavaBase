@@ -1,3 +1,7 @@
+------
+# 继承与实现
+
+------
 ## 代码示例
 ### simpleMode
 - ClassDemoA类继承于AbstractClassDemoA并且实现了InterfaceDemoA接口；
