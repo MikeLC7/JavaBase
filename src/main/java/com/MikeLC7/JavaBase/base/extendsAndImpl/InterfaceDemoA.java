@@ -16,6 +16,9 @@ public interface InterfaceDemoA {
 
     public static String interfaceStringStatic = "i am interfaceStringStatic";
 
+    /**
+     * Interface中的成员方法都是
+     */
     public void interfaceMethodNormalA();
 
     public void interfaceMethodNormalB();

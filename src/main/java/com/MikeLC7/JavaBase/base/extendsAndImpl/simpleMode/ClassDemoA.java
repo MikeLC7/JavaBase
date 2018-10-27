@@ -21,14 +21,14 @@ public class ClassDemoA extends AbstractClassDemoA implements InterfaceDemoA {
         ClassDemoA classDemoA = new ClassDemoA();
         //
         System.out.println(classDemoA.abstracStringNormal);
-        System.out.println(ClassDemoA.abstractStringStatic);
+        System.out.println(classDemoA.abstractStringStatic);
         classDemoA.abstractMethodNormalA();
         classDemoA.abstractMethodNormalB();
         classDemoA.abstractMethodAbstractA();
         classDemoA.abstractMethodAbstractB();
         //
-        System.out.println(ClassDemoA.interfaceStringNormal);
-        System.out.println(ClassDemoA.interfaceStringStatic);
+        System.out.println(classDemoA.interfaceStringNormal);
+        System.out.println(classDemoA.interfaceStringStatic);
         classDemoA.interfaceMethodAbstractA();
         classDemoA.interfaceMethodAbstractB();
         classDemoA.interfaceMethodNormalA();

@@ -18,14 +18,14 @@ public class ClassDemoB extends AbstractClassDemoB {
         ClassDemoB classDemoB = new ClassDemoB();
         //
         System.out.println(classDemoB.abstracStringNormal);
-        System.out.println(ClassDemoB.abstractStringStatic);
+        System.out.println(classDemoB.abstractStringStatic);
         classDemoB.abstractMethodNormalA();
         classDemoB.abstractMethodNormalB();
         classDemoB.abstractMethodAbstractA();
         classDemoB.abstractMethodAbstractB();
         //
-        System.out.println(ClassDemoB.interfaceStringNormal);
-        System.out.println(ClassDemoB.interfaceStringStatic);
+        System.out.println(classDemoB.interfaceStringNormal);
+        System.out.println(classDemoB.interfaceStringStatic);
         classDemoB.interfaceMethodAbstractA();
         classDemoB.interfaceMethodAbstractB();
         classDemoB.interfaceMethodNormalA();

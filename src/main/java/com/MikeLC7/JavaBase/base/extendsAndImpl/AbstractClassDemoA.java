@@ -20,12 +20,12 @@ public abstract class AbstractClassDemoA {
         System.out.println("abstractMethodNormalA---root");
     }
 
-    public void abstractMethodNormalB() {
+    protected void abstractMethodNormalB() {
         System.out.println("abstractMethodNormalB---root");
     }
 
     public abstract void abstractMethodAbstractA();
 
-    public abstract void abstractMethodAbstractB();
+    protected abstract void abstractMethodAbstractB();
 
 }
