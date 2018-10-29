@@ -2,16 +2,6 @@
 # 继承与实现
 
 ------
-## 代码示例
-### simpleMode
-- ClassDemoA类继承于AbstractClassDemoA并且实现了InterfaceDemoA接口；
-- 在ClassDemoA中依次访问所关联的“抽象类”和“接口”的成员变量和方法；
-### cascadeMode
-- AbstractClassDemoB**抽象类**继承于AbstractClassDemoA并且实现了InterfaceDemoA接口；
-- AbstractClassDemoB进行了父级抽象类（AbstractClassDemoA）的部分成员方法重写和部分抽象方法实现，并且实现了接口（InterfaceDemoA）部分方法；
-- 在ClassDemoB中依次访问所关联的“抽象类”和“接口”的成员变量和方法；
-
-------
 ## 理论
 ### 接口
 1. 成员变量：默认都是public、static、final类型的，必须被显式初始化
@@ -33,3 +23,17 @@
 > final修饰的方法不能被子类继承，与abstract逻辑冲突；
 - private和abstract不能连用。
 > private修饰的方法在子类继承时访问不到，即与abstract逻辑冲突；
+
+------
+## 代码示例
+
+------
+### simpleMode
+- ClassDemoA类继承于AbstractClassDemoA并且实现了InterfaceDemoA接口；
+- 在ClassDemoA中依次访问所关联的“抽象类”和“接口”的成员变量和方法；
+### cascadeMode
+- AbstractClassDemoB**抽象类**继承于AbstractClassDemoA并且实现了InterfaceDemoA接口；
+- AbstractClassDemoB进行了父级抽象类（AbstractClassDemoA）的部分成员方法重写和部分抽象方法实现，并且实现了接口（InterfaceDemoA）部分方法；
+- 在ClassDemoB中依次访问所关联的“抽象类”和“接口”的成员变量和方法；
+
+------
