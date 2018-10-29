@@ -25,7 +25,7 @@ public interface InterfaceDemoA {
 
     abstract void interfaceMethodAbstractA();
 
-    abstract void interfaceMethodAbstractB();
+    void interfaceMethodAbstractB();
 
 
 }
