@@ -1,4 +1,4 @@
-package JVM.classLoad.sequence;
+package JVM.classLoad.sequence.simpleMode;
 
 /**
  * Project:
@@ -13,17 +13,19 @@ package JVM.classLoad.sequence;
  **/
 public class StaticTest {
     /**
-     1:j i=0 n=0
-     2:构造块 i=1 n=1
-     3:t1 i=2 n=2
-     4:j i=3 n=3
-     5:构造块 i=4 n=4
-     6:t2 i=5 n=5
-     7:i i=6 n=6
-     8:静态块 i=7 n=99
-     9:j i=8 n=100
-     10:构造块 i=9 n=101
-     11:init i=10 n=102
+     1:g i=0 n=0
+     2:h i=1 n=1
+     3:j i=2 n=2
+     4:构造块 i=3 n=3
+     5:t1 i=4 n=4
+     6:j i=5 n=5
+     7:构造块 i=6 n=6
+     8:t2 i=7 n=7
+     9:i i=8 n=8
+     10:静态块 i=9 n=99
+     11:j i=10 n=100
+     12:构造块 i=11 n=101
+     13:init i=12 n=102
      */
     public static int k = 0;
     public static int g = print("g");
