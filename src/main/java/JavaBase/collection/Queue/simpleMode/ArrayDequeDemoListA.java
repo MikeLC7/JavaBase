@@ -10,7 +10,7 @@ package JavaBase.collection.Queue.simpleMode;
  *
  * @author: MikeLC
  *
- * @date: 2018/10/30 下午 01:11
+ * @date: 2018/10/30 下午 01:33
  *
  * Copyright ( c ) 2018
  *
