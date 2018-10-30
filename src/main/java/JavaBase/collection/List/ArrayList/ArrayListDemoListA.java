@@ -1,4 +1,4 @@
-package JavaBase.collection.List.simpleMode;
+package JavaBase.collection.List.ArrayList;
 
 
 import org.junit.Test;

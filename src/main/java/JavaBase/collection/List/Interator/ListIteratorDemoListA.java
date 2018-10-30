@@ -1,4 +1,4 @@
-package JavaBase.collection.List.simpleMode;
+package JavaBase.collection.List.Interator;
 
 
 import org.junit.Test;
