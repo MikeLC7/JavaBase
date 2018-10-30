@@ -22,7 +22,7 @@ import java.util.Set;
  * Copyright ( c ) 2018
  *
  */
-public class ListDemoListA {
+public class ArrayListDemoListA {
 
 
 
