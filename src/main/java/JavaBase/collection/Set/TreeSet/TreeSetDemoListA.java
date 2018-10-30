@@ -1,4 +1,4 @@
-package JavaBase.collection.Set.simpleMode;
+package JavaBase.collection.Set.TreeSet;
 
 
 import org.junit.Test;

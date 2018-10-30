@@ -1,4 +1,4 @@
-package JavaBase.collection.Set.simpleMode;
+package JavaBase.collection.Set.LinkedHashSet;
 
 
 import org.junit.Test;

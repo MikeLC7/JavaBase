@@ -1,4 +1,4 @@
-package JavaBase.collection.Set.simpleMode;
+package JavaBase.collection.Set.EnumSet;
 
 
 import org.junit.Test;
@@ -53,6 +53,7 @@ public class EnumSetDemoListA {
         System.out.println(es4);
         //
         Set es5 = EnumSet.complementOf(es4);
+        //
         System.out.println(es5);
         //
     }
