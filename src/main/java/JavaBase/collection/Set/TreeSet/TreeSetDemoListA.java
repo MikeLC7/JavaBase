@@ -41,11 +41,12 @@ public class TreeSetDemoListA {
     @Test
     public void treeSetCustomComparebleDemo(){
         Set setDemo = new TreeSet();
+        //@1
         setDemo.add(new C(-1));
         setDemo.add(new C(98));
         setDemo.add(new C(8));
         setDemo.add(new C(0));
-        //
+        //@2
         System.out.println(setDemo);
     }
 
@@ -60,7 +61,8 @@ public class TreeSetDemoListA {
     }
 
     @Test
-    public void treeSetCustomSortDemo(){
+    public void treeSetCustomComparatorDemo(){
+        //@1
         Set setDemo = new TreeSet(new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
@@ -69,11 +71,12 @@ public class TreeSetDemoListA {
                 return m1.age > m2.age ? -1 : m1.age < m2.age ? 1 : 0;
             }
         });
+        //@2
         setDemo.add(new M(-1));
         setDemo.add(new M(98));
         setDemo.add(new M(8));
         setDemo.add(new M(0));
-        //
+        //@3
         System.out.println(setDemo);
     }
 
@@ -81,6 +84,7 @@ public class TreeSetDemoListA {
     public void treeSetErrorDemo2(){
         Set setDemo = new TreeSet();
         System.out.println(setDemo.add(new Date()));
+        //@1
         System.out.println(setDemo.add(new String("123")));//java.lang.ClassCastException
         //
         System.out.println(setDemo);
@@ -92,6 +96,7 @@ public class TreeSetDemoListA {
     @Test
     public void treeSetErrorDemo(){
         Set setDemo = new TreeSet();
+        //@1
         System.out.println(setDemo.add(new TreeSetError()));//java.lang.ClassCastException
         System.out.println(setDemo.add(new TreeSetError()));
         //
@@ -105,9 +110,11 @@ public class TreeSetDemoListA {
         System.out.println(setDemo.add("456"));
         System.out.println(setDemo.add("789"));
         System.out.println(setDemo.add("012"));
+        //@1
         //System.out.println(setDemo.add(null));
+        //@2
         System.out.println(setDemo.add("123"));
-        //
+        //@3
         System.out.println(setDemo);
     }
 

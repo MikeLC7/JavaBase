@@ -1,4 +1,4 @@
-package JavaBase.collection.iterator.simpleMode;
+package JavaBase.collection.Iterator.simpleMode;
 
 
 

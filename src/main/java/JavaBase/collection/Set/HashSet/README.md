@@ -4,7 +4,8 @@
 ------
 ## 示例
 ### HashSetDemoListA
-##### hashSetSimpleDemo
+#### hashSetSimpleDemo
+- 基本示例
 1. 元素可为null
 2. 元素不可重复
 3. 元素无顺序

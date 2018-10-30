@@ -22,6 +22,45 @@ import java.util.Set;
  */
 public class HashSetEqualityDemo {
 
+    class A {
+        public boolean equals(Object o){
+            return true;
+        }
+    }
+
+    class B {
+        public int hashCode(){
+            return 1;
+        }
+    }
+
+    class C {
+        public int hashCode(){
+            return 1;
+        }
+        public boolean equals(Object o){
+            return true;
+        }
+    }
+
+    class D {
+        public int hashCode(){
+            return 1;
+        }
+        public boolean equals(Object o){
+            return false;
+        }
+    }
+
+    class E {
+        public int hashCode(){
+            return 2;
+        }
+        public boolean equals(Object o){
+            return true;
+        }
+    }
+
     /**
      * Description: 
      *
@@ -34,18 +73,33 @@ public class HashSetEqualityDemo {
     @Test
     public void hashSetEqualityDemo(){
         Set setDemo = new HashSet();
-        System.out.println(setDemo.add("abc"));
-        System.out.println(setDemo.add("123"));
-        System.out.println(setDemo.add("456"));
-        System.out.println(setDemo.add("789"));
-        System.out.println(setDemo.add("012"));
-        System.out.println(setDemo.add("edf"));
         //@1
-        System.out.println(setDemo.add(null));
+        System.out.println(setDemo.add(new A()));
+        System.out.println(setDemo.add(new A()));
         //@2
-        System.out.println(setDemo.add("123"));
+        System.out.println(setDemo.add(new B()));
+        System.out.println(setDemo.add(new B()));
         //@3
+        System.out.println(setDemo.add(new C()));
+        System.out.println(setDemo.add(new C()));
+        //@4
+        System.out.println(setDemo.add(new D()));
+        System.out.println(setDemo.add(new D()));
+        //@5
+        System.out.println(setDemo.add(new E()));
+        //@6
+        System.out.println(setDemo.add(new E()));
+        //@7
         System.out.println(setDemo);
+        /**
+         [JavaBase.collection.Set.HashSet.equality.HashSetEqualityDemo$B@1
+         JavaBase.collection.Set.HashSet.equality.HashSetEqualityDemo$B@1
+         JavaBase.collection.Set.HashSet.equality.HashSetEqualityDemo$D@1
+         JavaBase.collection.Set.HashSet.equality.HashSetEqualityDemo$D@1
+         JavaBase.collection.Set.HashSet.equality.HashSetEqualityDemo$A@1eb44e46
+         JavaBase.collection.Set.HashSet.equality.HashSetEqualityDemo$E@2
+         JavaBase.collection.Set.HashSet.equality.HashSetEqualityDemo$A@6504e3b2]
+         */
     }
 
 
