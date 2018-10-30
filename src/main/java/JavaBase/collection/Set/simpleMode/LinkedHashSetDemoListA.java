@@ -1,4 +1,4 @@
-package JavaBase.collection.set.simpleMode;
+package JavaBase.collection.Set.simpleMode;
 
 
 import org.junit.Test;
