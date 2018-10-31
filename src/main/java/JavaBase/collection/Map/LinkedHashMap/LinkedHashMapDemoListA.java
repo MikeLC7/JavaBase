@@ -1,10 +1,10 @@
-package JavaBase.collection.Map.simpleMode;
+package JavaBase.collection.Map.LinkedHashMap;
 
 
 /**
  * Project: 
  *
- * File: IdentityHashMapDemoListA
+ * File: LinkedHashMapDemoListA
  *
  * Description: 
  *
@@ -15,7 +15,7 @@ package JavaBase.collection.Map.simpleMode;
  * Copyright ( c ) 2018
  *
  */
-public class IdentityHashMapDemoListA {
+public class LinkedHashMapDemoListA {
  
 
 

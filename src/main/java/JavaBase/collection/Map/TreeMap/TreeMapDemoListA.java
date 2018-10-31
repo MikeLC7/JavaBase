@@ -1,4 +1,4 @@
-package JavaBase.collection.Map.simpleMode;
+package JavaBase.collection.Map.TreeMap;
 
 
 import org.junit.Test;

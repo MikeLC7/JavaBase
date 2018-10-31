@@ -1,5 +1,7 @@
-package JavaBase.collection.Map.simpleMode;
+package JavaBase.collection.Map.HashMap;
 
+
+import org.junit.Test;
 
 /**
  * Project: 
