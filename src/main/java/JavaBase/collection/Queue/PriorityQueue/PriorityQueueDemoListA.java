@@ -1,4 +1,4 @@
-package JavaBase.collection.Queue.simpleMode;
+package JavaBase.collection.Queue.PriorityQueue;
 
 
 import org.junit.Test;
