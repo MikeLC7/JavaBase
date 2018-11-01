@@ -1,10 +1,5 @@
-package JavaBase.dataStructure.array.arithmetic.BubbleSort;
+package JavaBase.dataStructure.Array.arithmetic.BubbleSort;
 
-
-import org.junit.Test;
-
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Project:
