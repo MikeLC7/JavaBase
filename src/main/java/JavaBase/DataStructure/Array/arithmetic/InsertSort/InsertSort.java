@@ -36,14 +36,14 @@ public class InsertSort {
 
     public static int[] sort(int[] array){
         //计算时间复杂度
-        int timeComplexity = 0;
+        //int timeComplexity = 0;
         //计算交换复杂度
-        int exchangeComplexity = 0;
+        //int exchangeComplexity = 0;
         //
         int j;
         //从下标为1的元素开始选择合适的位置插入，因为下标为0的只有一个元素，默认是有序的
         for(int i = 1 ; i < array.length ; i++){
-            boolean timeFlag = true;
+            //boolean timeFlag = true;
             int tmp = array[i];//记录要插入的数据
             j = i;
             while(j > 0 && tmp < array[j-1]){//从已经排序的序列最右边的开始比较，找到比其小的数
@@ -52,24 +52,24 @@ public class InsertSort {
                 j--;
 
                 //登记时间复杂度
-                timeComplexity++ ;
-                timeFlag = false;
+                //timeComplexity++ ;
+                //timeFlag = false;
                 //登记交换复杂度
-                exchangeComplexity++ ;
+                //exchangeComplexity++ ;
             }
             //
             array[j] = tmp;//存在比其小的数，插入
             //登记时间复杂度
-            if (timeFlag){
-                timeComplexity++ ;
-            }
+            //if (timeFlag){
+            //    timeComplexity++ ;
+            //}
             //第 i轮排序的结果为
             System.out.print("第"+(i)+"轮排序后的结果为:");
             display(array);
         }
         //打印复杂度
-        System.out.println("时间复杂度为：" + timeComplexity);
-        System.out.println("交换复杂度为：" + exchangeComplexity);
+        //System.out.println("时间复杂度为：" + timeComplexity);
+        //System.out.println("交换复杂度为：" + exchangeComplexity);
         return array;
     }
 
