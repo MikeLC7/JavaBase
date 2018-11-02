@@ -7,10 +7,10 @@
 
 
 ### 数据结构实现方式
-- 接口及子接口下的常用实现类
-    - 实现类目录
-        - 案例场景目录
-        - simpleMode：日常案例
-        - xxMode：特殊案例
+- 数据结构
+    - implement：实现方式
+        - XXmode
+    - arithmetic：算法
+        - XX
 
 ------
