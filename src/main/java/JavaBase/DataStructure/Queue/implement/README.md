@@ -6,13 +6,13 @@
 ### 
 #### 
 
-
 ------
 ## 目录
-### queue
-- 队列
-#### optimizeMode
-- 优化版本
-
+### Queue
+- 简单队列
+#### PriorityQueue
+- 有序队列
+#### Deque
+- 双向队列
 
 ------

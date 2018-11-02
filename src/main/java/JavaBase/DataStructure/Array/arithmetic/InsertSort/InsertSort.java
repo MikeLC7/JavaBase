@@ -47,14 +47,15 @@ public class InsertSort {
             int tmp = array[i];//记录要插入的数据
             j = i;
             while(j > 0 && tmp < array[j-1]){//从已经排序的序列最右边的开始比较，找到比其小的数
+                //
+                array[j] = array[j-1];//向后挪动
+                j--;
+
                 //登记时间复杂度
                 timeComplexity++ ;
                 timeFlag = false;
                 //登记交换复杂度
                 exchangeComplexity++ ;
-                //
-                array[j] = array[j-1];//向后挪动
-                j--;
             }
             //
             array[j] = tmp;//存在比其小的数，插入

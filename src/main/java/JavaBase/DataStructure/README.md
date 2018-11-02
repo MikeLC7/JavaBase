@@ -4,6 +4,14 @@
 ------
 ## 目录
 ### a_remark
+### Array
+- 数组
+### Stack
+- 栈
+### Queue
+- 队列
+### LinkedList
+- 链表
 
 
 ### 数据结构实现方式
