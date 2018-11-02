@@ -9,7 +9,7 @@ package JavaBase.DataStructure.LinkedList.implement.TwoWayLinkedList;
  *
  * @author: MikeLC
  *
- * @date: 2018/11/2 下午 12:10
+ * @date: 2018/11/2 下午 04:12
  *
  * Copyright ( c ) 2018
  *
