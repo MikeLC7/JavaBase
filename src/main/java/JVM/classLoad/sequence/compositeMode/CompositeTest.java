@@ -13,20 +13,24 @@ package JVM.classLoad.sequence.compositeMode;
  **/
 public class CompositeTest {
     /**
-     1:g i=0 n=0
-     2:h i=1 n=1
-     3:j i=2 n=2
-     4:构造块 i=3 n=3
-     5:t1 i=4 n=4
-     6:j i=5 n=5
-     7:构造块 i=6 n=6
-     8:t2 i=7 n=7
-     9:i i=8 n=8
-     10:静态块 i=9 n=99
-     11:j i=10 n=100
-     12:构造块 i=11 n=101
-     13:init i=12 n=102
+     1:静态块2 i=0 n=0
+     1:g i=1 n=1
+     2:h i=2 n=2
+     3:j i=3 n=3
+     4:构造块 i=4 n=4
+     5:t1 i=5 n=5
+     6:j i=6 n=6
+     7:构造块 i=7 n=7
+     8:t2 i=8 n=8
+     9:i i=9 n=9
+     10:静态块 i=10 n=99
+     11:j i=11 n=100
+     12:构造块 i=12 n=101
+     13:init i=13 n=102
      */
+    static{
+        print("静态块2");
+    }
     public static int k = 0;
     public static int g = print("g");
     public static int h = print("h");
