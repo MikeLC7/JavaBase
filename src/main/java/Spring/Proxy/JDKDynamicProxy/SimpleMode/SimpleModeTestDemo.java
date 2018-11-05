@@ -1,7 +1,6 @@
 package Spring.Proxy.JDKDynamicProxy.SimpleMode;
 
 import Spring.Proxy.JDKDynamicProxy.JDKDynamicProxy;
-import Spring.Proxy.JDKDynamicProxy.UserManager;
 
 /**
  * Project:
