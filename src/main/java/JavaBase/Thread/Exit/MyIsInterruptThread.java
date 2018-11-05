@@ -14,7 +14,7 @@ package JavaBase.Thread.Exit;
  * Copyright ( c ) 2018
  *
  */
-public class MyThread4 extends Thread {
+public class MyIsInterruptThread extends Thread {
     public void run(){
         super.run();
         try {

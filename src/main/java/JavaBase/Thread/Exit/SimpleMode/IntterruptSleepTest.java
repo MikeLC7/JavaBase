@@ -13,9 +13,9 @@ public class IntterruptSleepTest {
             Thread.sleep(2000);
             System.out.println("isInterrupted-2:"+myThread.isInterrupted());
             myThread.interrupt();
-            myThread.join();
             System.out.println("isInterrupted-3:"+myThread.isInterrupted());
-            System.out.println("isInterrupted-4:"+myThread.isAlive());
+            myThread.join();
+            System.out.println("isAlive-1:"+myThread.isAlive());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -14,7 +14,7 @@ package JavaBase.Thread.Exit;
  * Copyright ( c ) 2018
  *
  */
-public class MyThread extends Thread {
+public class MyNormalThread extends Thread {
     public void run(){
         super.run();
         for(int i=0; i<50000; i++){

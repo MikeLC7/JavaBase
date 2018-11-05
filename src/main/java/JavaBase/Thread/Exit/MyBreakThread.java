@@ -14,7 +14,7 @@ package JavaBase.Thread.Exit;
  * Copyright ( c ) 2018
  *
  */
-public class MyThread2 extends Thread {
+public class MyBreakThread extends Thread {
     public void run(){
         super.run();
         for(int i=0; i<500000; i++){

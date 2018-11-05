@@ -14,7 +14,7 @@ package JavaBase.Thread.Exit;
  * Copyright ( c ) 2018
  *
  */
-public class MyThread3 extends Thread {
+public class MyExceptionThread extends Thread {
     public void run(){
         super.run();
         try {

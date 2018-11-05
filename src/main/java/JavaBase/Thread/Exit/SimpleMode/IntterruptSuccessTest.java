@@ -1,12 +1,12 @@
 package JavaBase.Thread.Exit.SimpleMode;
 
 
-import JavaBase.Thread.Exit.MyThread3;
+import JavaBase.Thread.Exit.MyExceptionThread;
 
 public class IntterruptSuccessTest {
 
     public static void main(String args[]){
-        MyThread3 myThread = new MyThread3();
+        MyExceptionThread myThread = new MyExceptionThread();
         myThread.start();
         System.out.println("isInterrupted-1:"+myThread.isInterrupted());
         try {
