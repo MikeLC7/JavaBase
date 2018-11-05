@@ -1,4 +1,4 @@
-package Spring.AOP.DynamicProxyMulti;
+package Spring.AOP.JDKDynamicProxyMulti;
 
 /**
  * Project:
@@ -17,7 +17,7 @@ package Spring.AOP.DynamicProxyMulti;
 public class TestDemo {
 
     public static void main(String[]args){
-        DynamicProxyMulti dynamicProxyMulti = new DynamicProxyMulti();
+        JDKDynamicProxyMulti dynamicProxyMulti = new JDKDynamicProxyMulti();
         UserManager userManager = (UserManager) dynamicProxyMulti.newProxyInstance(new UserManagerImpl(), new Log());
         userManager.findUser("dynamicProxyMulti_testDemo");
     }

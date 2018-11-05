@@ -1,4 +1,4 @@
-package Spring.AOP.DynamicProxyMulti;
+package Spring.AOP.JDKDynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -18,17 +18,15 @@ import java.lang.reflect.Proxy;
  * Copyright ( c ) 2018
  *
  */
-public class DynamicProxyMulti implements InvocationHandler {
+public class JDKDynamicProxy implements InvocationHandler {
 
     // 目标对象
     private Object targetObject;
-    //
-    private Object proxyObject;
+
 
     //绑定关系，也就是关联到哪个接口（与具体的实现类绑定）的哪些方法将被调用时，执行invoke方法。
-    public Object newProxyInstance(Object targetObject, Object proxyObject){
+    public Object newProxyInstance(Object targetObject){
         this.targetObject=targetObject;
-        this.proxyObject=proxyObject;
         //该方法用于为指定类装载器、一组接口及调用处理器生成动态代理类实例
         //第一个参数指定产生代理对象的类加载器，需要将其指定为和目标对象同一个类加载器
         //第二个参数要实现和目标对象一样的接口，所以只需要拿到目标对象的实现接口
@@ -48,22 +46,12 @@ public class DynamicProxyMulti implements InvocationHandler {
         }
         Object ret=null;
         try{
-            //反射得到操作者的实例
-            Class clazz = this.proxyObject.getClass();
-            //反射得到操作者的Start方法
-            Method start = clazz.getDeclaredMethod("start", null);
-            //反射执行start方法
-            start.invoke(this.proxyObject, null);
-            /**
-             * 调用目标方法
-             */
+            /*原对象方法调用前处理日志信息*/
+            System.out.println("satrt-->>");
+            //调用目标方法
             ret=method.invoke(targetObject, args);
             /*原对象方法调用后处理日志信息*/
-            //反射得到操作者的Start方法
-            Method end = clazz.getDeclaredMethod("end", String.class);
-            //反射执行start方法
-            end.invoke(this.proxyObject, "123");
-
+            System.out.println("success-->>");
         }catch(Exception e){
             e.printStackTrace();
             System.out.println("error-->>");
