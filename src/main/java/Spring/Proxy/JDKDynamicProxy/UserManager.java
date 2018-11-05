@@ -1,4 +1,4 @@
-package Spring.AOP.JDKDynamicProxy;
+package Spring.Proxy.JDKDynamicProxy;
 
 /**
  * Project:

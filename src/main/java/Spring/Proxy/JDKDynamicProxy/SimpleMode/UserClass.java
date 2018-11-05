@@ -1,4 +1,4 @@
-package Spring.AOP.JDKDynamicProxy.SimpleMode;
+package Spring.Proxy.JDKDynamicProxy.SimpleMode;
 
 /**
  * Project:

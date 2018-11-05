@@ -1,4 +1,4 @@
-package Spring.AOP.CglibProxy;
+package Spring.Proxy.CglibProxy;
 
 
 import org.springframework.cglib.proxy.Enhancer;
@@ -6,7 +6,6 @@ import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 /**
  * Project: 

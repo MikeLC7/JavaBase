@@ -15,13 +15,7 @@
 ## 目录
 
 ------
-### staticProxy
-- 静态代理
-### JDKDynamicProxy
-- JDK动态代理
-### JDKDynamicProxyMulti
-- JDK动态代理-multi
 ### implement
-- AOP实现
+- 实现
 
 ------

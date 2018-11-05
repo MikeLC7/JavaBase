@@ -1,4 +1,4 @@
-package Spring.AOP.JDKDynamicProxyMulti;
+package Spring.Proxy.JDKDynamicProxyMulti;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

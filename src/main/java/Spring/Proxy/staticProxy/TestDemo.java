@@ -1,4 +1,4 @@
-package Spring.AOP.staticProxy;
+package Spring.Proxy.staticProxy;
 
 /**
  * Project:

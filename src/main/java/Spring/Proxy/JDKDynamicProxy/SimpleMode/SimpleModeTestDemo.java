@@ -1,7 +1,7 @@
-package Spring.AOP.JDKDynamicProxy.SimpleMode;
+package Spring.Proxy.JDKDynamicProxy.SimpleMode;
 
-import Spring.AOP.JDKDynamicProxy.JDKDynamicProxy;
-import Spring.AOP.JDKDynamicProxy.UserManager;
+import Spring.Proxy.JDKDynamicProxy.JDKDynamicProxy;
+import Spring.Proxy.JDKDynamicProxy.UserManager;
 
 /**
  * Project:

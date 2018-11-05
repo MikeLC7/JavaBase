@@ -1,8 +1,8 @@
-package Spring.AOP.CglibProxy.SimpleMode;
+package Spring.Proxy.CglibProxy.SimpleMode;
 
-import Spring.AOP.CglibProxy.CglibProxy;
-import Spring.AOP.CglibProxy.UserManager;
-import Spring.AOP.CglibProxy.UserManagerImpl;
+import Spring.Proxy.CglibProxy.CglibProxy;
+import Spring.Proxy.CglibProxy.UserManager;
+import Spring.Proxy.CglibProxy.UserManagerImpl;
 
 /**
  * Project:

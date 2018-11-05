@@ -1,20 +1,26 @@
-package Spring.AOP.CglibProxy;
+package Spring.Proxy.staticProxy;
 
 /**
- * Project:
+ * Project: 
  *
- * File: UserManagerImpl
+ * File: UserManagerProxy
  *
- * Description:
+ * Description: 
  *
  * @author: MikeLC
  *
- * @date: 2018/11/5 下午 02:36
+ * @date: 2018/11/5 下午 02:37
  *
  * Copyright ( c ) 2018
  *
  */
-public class UserManagerImpl implements UserManager {
+public class UserManagerProxy implements UserManager {
+
+    private UserManager userManager;
+
+    public UserManagerProxy(UserManager userManager){
+        this.userManager = userManager;
+    }
 
     @Override
     public void addUser(String userId, String userName) {
@@ -28,7 +34,9 @@ public class UserManagerImpl implements UserManager {
 
     @Override
     public String findUser(String userId) {
+        System.out.println("UserManagerProxy.before.findUser");
         System.out.println("UserManagerImpl.findUser");
+        System.out.println("UserManagerProxy.after.findUser");
         return userId;
     }
 
@@ -36,5 +44,5 @@ public class UserManagerImpl implements UserManager {
     public void modifyUser(String userId, String userName) {
         System.out.println("UserManagerImpl.modifyUser");
     }
-
+    
 }

@@ -1,4 +1,4 @@
-package Spring.AOP.CglibProxy;
+package Spring.Proxy.CglibProxy;
 
 /**
  * Project:
