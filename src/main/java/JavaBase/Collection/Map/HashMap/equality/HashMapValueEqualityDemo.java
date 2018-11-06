@@ -19,11 +19,11 @@ import java.util.HashMap;
  * Copyright ( c ) 2018
  *
  */
-public class HashMapEqualityDemo2 {
+public class HashMapValueEqualityDemo {
 
     class A {
         public int hashCode(){
-            return 11;
+            return 17;
         }
         public boolean equals(Object o){
             return true;
@@ -50,7 +50,7 @@ public class HashMapEqualityDemo2 {
      * @date: 2018/10/24 下午 08:12
      */    
     @Test
-    public void hashMapEqualityDemo(){
+    public void hashMapValyeEqualityDemo(){
         HashMap hashMap = new HashMap();
         //@1
         System.out.println(hashMap.put(new A(),"A1"));
@@ -67,7 +67,6 @@ public class HashMapEqualityDemo2 {
         System.out.println("//////");
         //@11
         System.out.println(hashMap.get(new A()));
-        //@12
         System.out.println(hashMap.get(new B()));
 
     }

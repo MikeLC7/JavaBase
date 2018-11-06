@@ -32,6 +32,20 @@ public class HashMapDemoListA {
     }
 
     @Test
+    public void hashTableIndexDemo3(){
+        int hash = 1;
+        int hash2 = 17;
+        int n = 8;
+        for (int i=1;i<=5;i++){
+            n = n * 2;
+            System.out.println("n="+n);
+            System.out.println((n - 1) & hash);
+            System.out.println((n - 1) & hash2);
+            System.out.println("===========");
+        }
+    }
+
+    @Test
     public void hashTableIndexDemo2(){
         String str = new String("abc");
         String str2 = new String("abcasdasdasd23");
