@@ -1,8 +1,9 @@
-package JavaBase.Collection.Set.HashSet.equality;
+package JavaBase.Collection.Map.HashMap.equality;
 
 
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,7 +21,7 @@ import java.util.Set;
  * Copyright ( c ) 2018
  *
  */
-public class HashSetEqualityDemo {
+public class HashMapEqualityDemo {
 
     class A {
         public boolean equals(Object o){
@@ -71,33 +72,36 @@ public class HashSetEqualityDemo {
      * @date: 2018/10/24 下午 08:12
      */    
     @Test
-    public void hashSetEqualityDemo(){
-        Set setDemo = new HashSet();
+    public void hashMapEqualityDemo(){
+        HashMap hashMap = new HashMap();
         //@1
-        System.out.println(setDemo.add(new A()));
-        System.out.println(setDemo.add(new A()));
+        System.out.println(hashMap.put(new A(),"A1"));
+        System.out.println(hashMap.put(new A(),"A2"));
         //@2
-        System.out.println(setDemo.add(new B()));
-        System.out.println(setDemo.add(new B()));
+        System.out.println(hashMap.put(new B(),"B1"));
+        System.out.println(hashMap.put(new B(),"B2"));
         //@3
-        System.out.println(setDemo.add(new C()));
-        System.out.println(setDemo.add(new C()));
+        System.out.println(hashMap.put(new C(),"C1"));
+        System.out.println(hashMap.put(new C(),"C2"));
         //@4
-        System.out.println(setDemo.add(new D()));
-        System.out.println(setDemo.add(new D()));
+        System.out.println(hashMap.put(new D(),"D1"));
+        System.out.println(hashMap.put(new D(),"D2"));
         //@5
-        System.out.println(setDemo.add(new E()));
+        System.out.println(hashMap.put(new E(),"E1"));
         //@6
-        System.out.println(setDemo.add(new E()));
+        System.out.println(hashMap.put(new E(),"E2"));
         //@7
-        System.out.println(setDemo);
+        System.out.println("//////");
+        for (Object key : hashMap.keySet()) {
+            System.out.println(key.toString()+"="+hashMap.get(key));
+        }
         //
         System.out.println("//////");
-        System.out.println(setDemo.contains(new A()));
-        System.out.println(setDemo.contains(new B()));
-        System.out.println(setDemo.contains(new C()));
-        System.out.println(setDemo.contains(new D()));
-        System.out.println(setDemo.contains(new E()));
+        System.out.println(hashMap.get(new A()));
+        System.out.println(hashMap.get(new B()));
+        System.out.println(hashMap.get(new C()));
+        System.out.println(hashMap.get(new D()));
+        System.out.println(hashMap.get(new E()));
         /**
          [JavaBase.collection.Set.HashSet.equality.HashSetEqualityDemo$B@1
          JavaBase.collection.Set.HashSet.equality.HashSetEqualityDemo$B@1
