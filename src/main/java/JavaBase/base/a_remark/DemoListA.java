@@ -1,5 +1,7 @@
 package JavaBase.base.a_remark;
 
+import org.junit.Test;
+
 /**
  * Project:
  *
@@ -17,5 +19,10 @@ package JavaBase.base.a_remark;
 public class DemoListA {
 
 
+    @Test
+    public void objectMethod(){
+        Object o = new String("123");
+        System.out.println(o.toString());
+    }
 
 }
