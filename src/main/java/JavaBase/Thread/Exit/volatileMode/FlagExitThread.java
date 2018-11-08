@@ -20,7 +20,21 @@ public class FlagExitThread extends Thread {
         }
     }
 
-    @Test
+    public static void main(String[] args) {
+        FlagExitThread t = new FlagExitThread();
+        t.start();
+        try {
+            //先让线程跑起来
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        //结束线程
+        isDestroy = true;
+        System.out.println("main_exit time:"+System.currentTimeMillis());
+    }
+
+    //@Test
     public void singleTest(){
         FlagExitThread t = new FlagExitThread();
         t.start();
@@ -35,7 +49,7 @@ public class FlagExitThread extends Thread {
         System.out.println("main_exit time:"+System.currentTimeMillis());
     }
 
-    @Test
+    //@Test
     public void multiTest(){
         //
         for (int i=1;i<=20;i++){
