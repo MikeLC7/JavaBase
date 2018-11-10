@@ -3,8 +3,8 @@ package Spring.AOP.implement.annotation;
 
 import org.springframework.stereotype.Service;
 
-@Service
-public class AspectTestService {
+@Service("aspectTestService")
+public class AspectTestService{
 
     public String normalMethod(String test){
         System.out.println("=====AspectTestService.normalMethod=====start");

@@ -31,7 +31,7 @@ public class LogAspect {
     @Before("webPointCut()")
     public void deBefore(JoinPoint joinPoint) throws Throwable {
         // 接收到请求，记录请求内容
-        System.out.println("【注解：Before】------------------切面  before");
+        System.out.println("【注解：Before】------------------切面  before;");
     }
 
     @AfterReturning(returning = "ret", pointcut = "webPointCut()")

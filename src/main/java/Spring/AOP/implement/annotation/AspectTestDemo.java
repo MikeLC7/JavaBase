@@ -22,11 +22,13 @@ public class AspectTestDemo {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AopConfig.class); // 1
         //注解
-        AspectTestService aspectTestService = context.getBean(AspectTestService.class);
+        //AspectTestService aspectTestService = context.getBean(AspectTestService.class);
+        AspectTestService aspectTestService = (AspectTestService) context.getBean("aspectTestService");
         aspectTestService.normalMethod("AspectTestDemo");
         //
         System.out.println("//////////////////");
         //
+        Thread.sleep(1000);
         aspectTestService.exception();
         context.close();
 
