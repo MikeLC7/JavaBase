@@ -49,7 +49,7 @@ public class FlagExitThread extends Thread {
         System.out.println("main_exit time:"+System.currentTimeMillis());
     }
 
-    //@Test
+    @Test
     public void multiTest(){
         //
         for (int i=1;i<=20;i++){

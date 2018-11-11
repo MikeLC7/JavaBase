@@ -35,7 +35,7 @@ public class UserManagerProxy implements UserManager {
     @Override
     public String findUser(String userId) {
         System.out.println("UserManagerProxy.before.findUser");
-        System.out.println("UserManagerImpl.findUser");
+        userManager.findUser(userId);
         System.out.println("UserManagerProxy.after.findUser");
         return userId;
     }
