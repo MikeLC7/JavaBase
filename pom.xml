@@ -6,9 +6,6 @@
 	<groupId>com.MikeLC7</groupId>
 	<artifactId>JavaBase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>SpringMVC_Demo</module>
-    </modules>
     <packaging>pom</packaging>
 
 	<name>JavaBase</name>
